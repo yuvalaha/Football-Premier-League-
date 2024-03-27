@@ -1,0 +1,86 @@
+
+football games api:
+
+import requests
+url = "http://api.football-data.org/v4/competitions/PL"
+headers = {"X-Auth-Token": "ccaa541fc428481ca29c76efa21b6c0e"}  # Replace "YOUR_API_KEY" with your actual API key
+response = requests.get(url, headers=headers)
+
+if response.status_code == 200:
+    print(response.json())
+else:
+    print("Failed to fetch data:", response.status_code, response.text)
+
+
+"Arsenal" id = 57
+"Liverpool" id = 64
+"Manchester City" id = 65
+"Manchester Utd" id = 66
+
+
+
+events api: 
+
+import requests
+
+
+# Replace 'YOUR_API_KEY' with your actual SeatGeek API key
+API_KEY = 'NDAzMzQ0NjF8MTcxMDA1Njg0MC43MTk1MTQ0'
+
+# URL for the SeatGeek API endpoint to search for events
+url = 'https://api.seatgeek.com/2/events'
+
+start_date = '2024-03-09T00:00:00'
+end_date = '2024-03-25T00:00:00'
+
+# Example parameters for searching events in London, UK
+params = {
+    'client_id': API_KEY,
+    'venue.city': 'London',
+    'per_page': 15,  # Number of results per page
+    'datetime_utc.gte': start_date,  
+    'datetime_utc.lt': end_date,
+}
+
+# Make a GET request to the SeatGeek API
+response = requests.get(url, params=params)
+
+# Check if the request was successful (status code 200)
+if response.status_code == 200:
+    data = response.json()
+    # Process the data as needed
+    for event in data['events']:
+        print(event['title'])
+    
+else:
+    print(f"Error: {response.status_code}")
+    print(response.text)  # Print the error message if available
+
+
+weather api: 
+
+import requests
+
+# Replace 'YOUR_API_KEY' with your actual OpenWeatherMap API key
+API_KEY = '00b95aeefe8a3724fd5fda12e476a481'
+
+# URL for the OpenWeatherMap API endpoint to get current weather data
+url = 'http://api.openweathermap.org/data/2.5/weather'
+
+# Example parameters for retrieving weather data for London, UK
+params = {
+    'q': 'London,UK',  # City name and country code
+    'appid': API_KEY    # Your API key
+}
+
+# Make a GET request to the OpenWeatherMap API
+response = requests.get(url, params=params)
+
+# Check if the request was successful (status code 200)
+if response.status_code == 200:
+    data = response.json()
+    # Process the data as needed
+    print(data)
+else:
+    print(f"Error: {response.status_code}")
+    print(response.text)  # Print the error message if available

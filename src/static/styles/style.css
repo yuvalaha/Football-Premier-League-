@@ -1,0 +1,173 @@
+
+/* General styling */
+html, body {
+    margin: 0;
+    height: 100%;
+    text-align: center;
+    background-image: linear-gradient( skyblue, lightyellow);
+    
+}
+
+
+.layout{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 10% 85% 5%;
+    
+}
+
+.layout, nav, main, footer {
+    border: 1px solid;
+    overflow: auto;
+}
+
+nav, main, footer{
+    width: 100%;
+}
+nav {
+    height: 100%;
+}
+
+.navbar-nav li a  {
+    font-size: larger;
+}
+
+.active{
+    font-weight: bold;
+    font-family: Lucida;
+    color: #0056b3 !important;
+    font-size: x-large;
+}
+
+
+/* Home page styling */
+.home-content {
+    /* height: 100%; */
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.home-content h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.home-content p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.home-content img {
+    width: 1000px;
+    height: 900px;
+}
+
+/* Testimonial Section */
+.testimonial {
+    margin-top: 50px;
+    padding: 20px;
+    /* background-color: #f9f9f9; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.testimonial p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.testimonial .author {
+    font-style: italic;
+    color: #999;
+}
+
+/* Special Offers Section */
+.special-offers {
+    margin-top: 50px;
+    padding: 20px;
+    /* background-color: #f9f9f9; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.special-offers h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.special-offers p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.special-offers a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    /* color: #fff; */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.special-offers a.btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+/* Matches Page styling */
+
+.teams-content{
+    display: flex;
+    justify-content: center;
+    
+}
+.min-img-liv img{
+    height: 330px;
+}
+.min-img-ful img{
+    height: 290px;
+}
+
+.min-img-ful img{
+    height: 290px;
+}
+
+/* Team Matches Page styling */
+.team-matches {
+    display: flex;
+    justify-content: center;
+}
+
+/* League Table Page */
+
+.league-table{
+    display: flex;
+    justify-content: center;
+}
+
+.league-table img{
+    width: 100px;
+    height: 100px;
+}
+
+/* H2H Page */
+.h2h{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    font-size: larger;
+}

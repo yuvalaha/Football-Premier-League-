@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}
+Football Vacation | Home 
+{% endblock title %}
+
+{% block content %}
+<div class="home-content">
+    <h1>Discover Exciting Premier League Matches!</h1>
+    <h3>Explore Upcoming Matches for Your Favorite Teams</h3>
+    <img src="{% static 'images/home/anfield.jpg' %}" alt="">
+</div>
+<div class="testimonial">
+    <h2>What Our Customers Say:</h2>
+    <p>"Thanks to Football Vacation, I was able to plan the perfect football trip for my friends and me. We had an amazing time attending Premier League matches!"</p>
+    <p class="author">- John Smith</p>
+</div>
+<div class="special-offers">
+    <h2>Special Offers</h2>
+    <p>Check out our special offers and discounts on football match tickets, hotel stays, and more. Don't miss out on these exclusive deals!</p>
+    <a href="{% url 'matches' %}" class="btn btn-secondary">View Offers</a>
+</div>
+{% endblock content %}

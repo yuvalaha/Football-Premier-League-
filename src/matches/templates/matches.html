@@ -1,0 +1,142 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Football Vacation | Matches 
+{% endblock title %}
+
+{% block content %}
+<h1>Choose Your Preferred Team</h1>
+<div class="teams-content d-flex mt-5">
+    <div class="col mx-4 ">  
+        <div class="mx-4 card" style="width: 18rem; height:24rem; background-color: lightblue;">
+            <img src="https://crests.football-data.org/57.svg" class=" mt-5 card-img-top" alt="...">
+            <div class="card-body">
+                <a href="{% url 'team_matches' 57 %}">Arsenal</a>
+            </div>
+        </div>
+        <div class="min-img-liv mx-4 card mt-3" style="width: 18rem; height:24rem; background-color: lightblue;">
+            <img src="https://crests.football-data.org/64.svg" class=" card-img-top" alt="...">
+            <div class="card-body">
+                <a href="{% url 'team_matches' 64 %}">Liverpool</a>
+            </div>
+        </div>
+        <div class="mx-4 card mt-3" style="width: 18rem; height:24rem; background-color: lightblue;">
+            <img src="https://crests.football-data.org/65.svg" class="mt-5 card-img-top" alt="...">
+            <div class="card-body">
+                <a href="{% url 'team_matches' 65 %}">Man City</a>
+            </div>
+        </div>
+        <div class="mx-4 card mt-3" style="width: 18rem; height:24rem; background-color: lightblue;">
+            <img src="https://crests.football-data.org/66.svg" class="mt-5 card-img-top" alt="...">
+            <div class="card-body">
+                <a href="{% url 'team_matches' 66 %}">Man Utd</a>
+            </div>
+        </div>
+    </div>
+    <div class="col mx-4">  
+        <div class="mx-4 card" style="width: 18rem; height:24rem; background-color: lightblue;">
+            <img src="https://crests.football-data.org/67.svg" class="mt-5 card-img-top" alt="...">
+            <div class="card-body">
+                <a href="{% url 'team_matches' 67 %}">Newcastle United</a>
+            </div>
+        </div>
+        <div class="mx-4 card mt-3" style="width: 18rem; height:24rem; background-color: lightblue;">
+            <img src="https://crests.football-data.org/351.svg" class="mt-5 card-img-top" alt="...">
+            <div class="card-body">
+                <a href="{% url 'team_matches' 351 %}">Nottingham Forest</a>
+            </div>
+        </div>
+        <div class="min-img-ful mx-4 card mt-3" style="width: 18rem; height:24rem; background-color: lightblue;">
+            <img src="https://crests.football-data.org/63.svg" class="mt-5 card-img-top" alt="...">
+            <div class="card-body">
+                <a href="{% url 'team_matches' 63 %}">Fulham</a>
+            </div>
+        </div>
+        <div class="min-img-ful mx-4 card mt-3" style="width: 18rem; height:24rem; background-color: lightblue;">
+            <img src="https://crests.football-data.org/354.svg" class="mt-5 card-img-top" alt="...">
+            <div class="card-body">
+                <a href="{% url 'team_matches' 354 %}">Crystal Palace</a>
+            </div>
+        </div>
+    </div>
+    <div class="col mx-4">  
+        <div class="mx-4 card" style="width: 18rem; height:24rem; background-color: lightblue;">
+            <img src="https://crests.football-data.org/61.svg" class="mt-5 card-img-top" alt="...">
+            <div class="card-body">
+                <a href="{% url 'team_matches' 61 %}">Chelsea</a>
+            </div>
+        </div>
+        <div class="mx-4 card mt-3" style="width: 18rem; height:24rem; background-color: lightblue;">
+            <img src="https://crests.football-data.org/402.svg" class="mt-5 card-img-top" alt="...">
+            <div class="card-body">
+                <a href="{% url 'team_matches' 402 %}">Brentford</a>
+            </div>
+        </div>
+        <div class="mx-4 card mt-3" style="width: 18rem; height:24rem; background-color: lightblue;">
+            <img src="https://crests.football-data.org/328.svg" class="mt-5 card-img-top" alt="...">
+            <div class="card-body">
+                <a href="{% url 'team_matches' 328 %}">Burnley</a>
+            </div>
+        </div>
+        <div class="mx-4 card mt-3" style="width: 18rem; height:24rem; background-color: lightblue;">
+            <img src="https://crests.football-data.org/389.svg" class="mt-5 card-img-top" alt="...">
+            <div class="card-body">
+                <a href="{% url 'team_matches' 389 %}">Luton Town</a>
+            </div>
+        </div>
+    </div>
+    <div class="col mx-4">  
+        <div class="mx-4 card" style="width: 18rem; height:24rem; background-color: lightblue;">
+            <img src="https://crests.football-data.org/58.svg" class="mt-5 card-img-top" alt="...">
+            <div class="card-body">
+                <a href="{% url 'team_matches' 58 %}">Aston Villa</a>
+            </div>
+        </div>
+        <div class="mx-4 card mt-3" style="width: 18rem; height:24rem; background-color: lightblue;">
+            <img src="https://crests.football-data.org/73.svg" class="mt-5 card-img-top" alt="...">
+            <div class="card-body">
+                <a href="{% url 'team_matches' 73 %}">Tottenham Hotspurs</a>
+            </div>
+        </div>
+        <div class="min-img-ful mx-4 card mt-3" style="width: 18rem; height:24rem; background-color: lightblue;">
+            <img src="https://crests.football-data.org/1044.svg" class="mt-5 card-img-top" alt="...">
+            <div class="card-body">
+                <a href="{% url 'team_matches' 1044 %}">Bournemouth</a>
+            </div>
+        </div>
+        <div class="mx-4 card mt-3" style="width: 18rem; height:24rem; background-color: lightblue;">
+            <img src="https://crests.football-data.org/62.svg" class="mt-5 card-img-top" alt="...">
+            <div class="card-body">
+                <a href="{% url 'team_matches' 62 %}">Everton</a>
+            </div>
+        </div>
+    </div>
+    <div class="col mx-4">  
+        <div class="mx-4 card" style="width: 18rem; height:24rem; background-color: lightblue;">
+            <img src="https://crests.football-data.org/76.svg" class="mt-5 card-img-top" alt="...">
+            <div class="card-body">
+                <a href="{% url 'team_matches' 76 %}">Wolves</a>
+            </div>
+        </div>
+        <div class="mx-4 card mt-3" style="width: 18rem; height:24rem; background-color: lightblue;">
+            <img src="https://crests.football-data.org/563.svg" class="mt-5 card-img-top" alt="...">
+            <div class="card-body">
+                <a href="{% url 'team_matches' 563 %}">West Ham Utd</a>
+            </div>
+        </div>
+
+        <div class="mx-4 card mt-3" style="width: 18rem; height:24rem; background-color: lightblue;">
+            <img src="https://crests.football-data.org/356.svg" class="mt-5 card-img-top" alt="...">
+            <div class="card-body">
+                <a href="{% url 'team_matches' 356 %}">Sheffield United</a>
+            </div>
+        </div>
+        <div class="mx-4 card mt-3" style="width: 18rem; height:24rem; background-color: lightblue;">
+            <img src="https://crests.football-data.org/397.svg" class="mt-5 card-img-top" alt="...">
+            <div class="card-body">
+                <a href="{% url 'team_matches' 397 %}">Brighton</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
