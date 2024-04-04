@@ -29,6 +29,8 @@ urlpatterns = [
     
     path("league/", include("league.urls")),
     
+    path("history/", include("history.urls")),
+    
     path('admin/', admin.site.urls),
     
 ]

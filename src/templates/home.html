@@ -8,17 +8,34 @@ Football Vacation | Home
 {% block content %}
 <div class="home-content">
     <h1>Discover Exciting Premier League Matches!</h1>
-    <h3>Explore Upcoming Matches for Your Favorite Teams</h3>
+    <h3 class="mb-5 mt-4">Explore Upcoming Matches for Your Favorite Teams</h3>
     <img src="{% static 'images/home/anfield.jpg' %}" alt="">
 </div>
-<div class="testimonial">
-    <h2>What Our Customers Say:</h2>
-    <p>"Thanks to Football Vacation, I was able to plan the perfect football trip for my friends and me. We had an amazing time attending Premier League matches!"</p>
-    <p class="author">- John Smith</p>
+<div class="features mb-5">
+    <h2 class="mb-4 mb-5">Upcoming Matches & League Standings</h2>
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h3>Upcoming Matches</h3>
+            <p>Stay updated on the upcoming matches of your favorite Premier League teams. View match dates, times, and venues.</p>
+            <a href="{% url 'matches' %}" class="btn btn-primary">View Upcoming Matches</a>
+        </div>
+        <div class="col-md-6">
+            <h3>Current Premier League Table</h3>
+            <p>Check out the latest standings in the Premier League. See how your favorite teams are performing throughout the season.</p>
+            <a href="{% url 'league_table' %}" class="btn btn-primary">View League Table</a>
+        </div>
+    </div>
 </div>
-<div class="special-offers">
-    <h2>Special Offers</h2>
-    <p>Check out our special offers and discounts on football match tickets, hotel stays, and more. Don't miss out on these exclusive deals!</p>
-    <a href="{% url 'matches' %}" class="btn btn-secondary">View Offers</a>
+
+<div class="additional-details mt-5">
+    <h2 class="mb-5">Explore More</h2>
+    
+            <div class="history-section">
+                <h3>League History</h3>
+                <p >Explore the rich history of the Premier League. Learn about past champions, memorable matches, and iconic moments.</p>
+                <a href="{% url 'history' %}" class="btn btn-info">Explore History</a>
+     
+    </div>
+    
 </div>
 {% endblock content %}

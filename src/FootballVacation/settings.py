@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     
     "matches.apps.MatchesConfig", 
     "league.apps.LeagueConfig",
-    
+    "history.apps.HistoryConfig",
 ]
 
 MIDDLEWARE = [
