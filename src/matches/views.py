@@ -13,7 +13,7 @@ def get_team_matches_data(team_id):
         url = f"http://api.football-data.org/v4/teams/{team_id}/matches"
         
         params = {"dateFrom": time,
-                "dateTo": "2024-05-30",}
+                "dateTo": "2025-05-30",}
         response = requests.get(url, headers=headers, params=params)
         print(response.json())
         return response.json()        
