@@ -177,11 +177,13 @@ nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
+    
 }
 
 .year-cards>div {
-    margin: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 100px;
 }
 
 .year-cards img {
@@ -192,7 +194,6 @@ nav {
 .year-layout {
     justify-content: center;
     align-items: center;
-    padding: 10%;
     text-align: center;
 
 }
